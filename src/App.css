@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1c1c1c, #333);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem;
+  min-height: 100vh;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #000;
+}
+
+.search-box {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1rem;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}
+
+.search-box button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.6);
+}
+
+.search-box button:hover {
+  background-color: #00ccaa;
+  transform: scale(1.05);
+}
+
+.react-player {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
 }
